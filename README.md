@@ -55,6 +55,6 @@ This is done by having all servers send pings and pongs to each other via UDP, a
     Maybe `server1` and `server2` just aren’t getting along well.
     We can’t know for sure, until we look at the results from all servers combined.
 
-6. Download the results from all servers.
+6. Download the results from all servers. The `plays/download-results.yml` playbook will download the results to `private/results/` folder.
 
-7. Analyze the result.
+7. Analyze the result. Some rudimentary analysis script is available at [result-analyzer.js](result-analyzer.js).
