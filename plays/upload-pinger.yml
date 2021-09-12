@@ -1,0 +1,14 @@
+---
+- name: Upload pinger
+  hosts: all
+
+  tasks:
+    - name: Create directory /opt/jitter-analysis
+      ansible.builtin.file:
+        path: /opt/jitter-analysis
+        state: directory
+    - name: Upload pinger tool
+      ansible.builtin.copy:
+        src: pinger
+        dest: /opt/jitter-analysis/pinger
+        mode: 0755

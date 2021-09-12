@@ -1,0 +1,10 @@
+---
+- name: Download logs
+  hosts: all
+
+  tasks:
+    - name: Fetch result files
+      ansible.builtin.fetch:
+        src: /opt/jitter-analysis/ping.log
+        dest: private/results/{{ pinger_id }}.log
+        flat: true

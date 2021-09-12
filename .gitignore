@@ -1,0 +1,5 @@
+node_modules
+*.log
+/pinger
+private
+.DS_Store
